@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<body bgcolor="grey">
+
+<head>
+  <title> Restaurant Rambler</title>
+</head>
+
+
+
+<style>
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #73AD21;
+    padding: 10px;}
+
+    img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;}
+
+
+	body {
+    font-size: 100%;
+	font-family: "Times New Roman";
+	margin-left: 50px;
+	margin-right: 50px;}
+
+h1 {font-size: 3rem;
+    text-align: center;
+	font-family: "Times New Roman";}
+
+h2 {font-size: 2.2rem;
+	font-family: "Times New Roman";
+	margin-left: 50px;
+	margin-right: 50px;}
+
+h3 {font-family: "Times New Roman";
+    font-size: 1.9rem;
+    text-align: center;}
+
+p {font-size: 1.6rem;
+	font-family: "Times New Roman";
+	margin-left: 100px;
+	margin-right: 100px;}
+
+
+  .bottom-one {margin-bottom: 1cm;}
+
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
+.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+@-ms-viewport{
+  width: device-width;
+}
+
+</style>
+
+
+
+
+
+<!--Header-->
+
+  	<font color ="white"><h1>Photography | The Restaurant Rambler</h1></font>
+  	<font color = "white"><h3>Wasting time with Cameras</h3></font>
+  
+<hr>
+
+<!-- Navigation -->
+<div class="w3-bar  grey w3-center">
+  
+  <font color = "white"><a href="Monday.html" style="width:12.5%" class="w3-bar-item w3-button w3-mobile">Monday</a>
+  <a href="Tuesday.html" style="width:12.5%" class="w3-bar-item w3-button w3-mobile">Tuesday</a>
+  <a href="Wednesday.html" style="width:12.5%" class="w3-bar-item w3-button w3-mobile">Wednesday</a>
+  <a href="Thursday.html" style="width:12.5%" class="w3-bar-item w3-button w3-mobile">Thursday</a>
+  <a href="Friday.html" style="width:12.5%" class="w3-bar-item w3-button w3-mobile">Friday</a>
+  <a href="Saturday.html" style="width:12.5%" class="w3-bar-item w3-button w3-mobile">Saturday</a>
+  <a href="Sunday.html" style="width:12.5%" class="w3-bar-item w3-button w3-mobile">Sunday</a>
+  <a href="Brunch.html" style="width:12.5%" class="w3-bar-item w3-button w3-mobile">Brunch</a></font>
+  
+  
+  <!--Other Page Options
+  <a href="consulting.html" style="width:20%" class="w3-bar-item w3-button w3-mobile">Consulting</a>
+  <a href="contact.html" style="width:20%" class="w3-bar-item w3-button w3-mobile">Contact</a>
+  <a href="employment.html" style="width:20%" class="w3-bar-item w3-button w3-mobile">Employment</a>
+  -->
+
+</div>
+
+<!--Second Navigation-->
+
+<div class="w3-bar  grey w3-center">
+  <font color = "white"><a href="index.html" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Home</a>
+  <a href="articles.html" style="width:16.67%" class="w3-bar-item w3-button w3-mobile">Ramblin' Around</a>
+  <a href="Photography.html" style="width:16.67%" class="w3-bar-item w3-button w3-mobile">Photography</a>
+  <a href="contact.html" style="width:16.67%" class="w3-bar-item w3-button w3-mobile">Contact</a>
+  <a href="consulting.html" style="width:16.67%" class="w3-bar-item w3-button w3-mobile">Consulting</a>
+   <a href="employment.html" style="width:16.66%" class="w3-bar-item w3-button w3-mobile">Join the Team</a></font>
+
+   
+  <!--Other Page Options
+ 
+  <a href="contact.html" style="width:20%" class="w3-bar-item w3-button w3-mobile">Contact</a>
+ 
+  -->
+
+</div>
+
+<hr>
+
+<p class="bottom-one"></p>
+
+
+<!-- Slideshow container -->
+
+<div class="slideshow-container">
+
+  <!-- images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="images/nandoSalad.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="images/Punch_flatbread_closeup.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="images/denverOlives1.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="images/hamiltonPotatoes.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="images/chopsticks1.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+<div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="images/punchSilverware.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+
+   <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="images/greenLeaves.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="images/flowerPetals.jpg" style="width:100%">
+    <div class="text"></div>
+  </div>
+
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+  <span class="dot" onclick="currentSlide(6)"></span> 
+  <span class="dot" onclick="currentSlide(7)"></span>    
+  <span class="dot" onclick="currentSlide(8)"></span>  
+ 
+</div>
+
+<!--Javascript for Slideshow-->
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+  
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+  
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+<!--The photo grid-->
+
+</body>
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-grey w3-xlarge">
+  <a href="https://www.facebook.com/The-Restaurant-Rambler-760312967501347/"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://www.instagram.com/restaurant_rambler/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+
+  <!--Social Media
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a> -->
+   
+
+  <p class="w3-medium">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+
+
+  </html>
